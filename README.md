@@ -1,6 +1,7 @@
-|~~\|          |\  /|        |   |   
-|--<||   |/~/  | \/ |/~~||/~\|~~\|/~/
-|__/| \_/|\/_  |    |\__||   |__/|\/_
+ ____  ____  ____  ____  _________  ____  ____  ____  ____  ____  ____ 
+||B ||||l ||||u ||||e ||||       ||||M ||||a ||||r ||||b ||||l ||||e ||
+||__||||__||||__||||__||||_______||||__||||__||||__||||__||||__||||__||
+|/__\||/__\||/__\||/__\||/_______\||/__\||/__\||/__\||/__\||/__\||/__\|
 ==================
 
 The first photo of Earth from space was taken on October 24, 1946, from an altitude of 65 miles above the surface of New Mexico. It was captured by a 35-millimeter motion picture camera as that camera was propelled skyward on a German V-2 missile. 
