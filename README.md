@@ -1,5 +1,9 @@
-Blue-Marble-P-Tech
-#bluemarble
+/\  _`\ /\_ \                        /'\_/`\                 /\ \     /\_ \            
+\ \ \L\ \//\ \    __  __     __     /\      \     __     _ __\ \ \____\//\ \      __   
+ \ \  _ <'\ \ \  /\ \/\ \  /'__`\   \ \ \__\ \  /'__`\  /\`'__\ \ '__`\ \ \ \   /'__`\ 
+  \ \ \L\ \\_\ \_\ \ \_\ \/\  __/    \ \ \_/\ \/\ \L\.\_\ \ \/ \ \ \L\ \ \_\ \_/\  __/ 
+   \ \____//\____\\ \____/\ \____\    \ \_\\ \_\ \__/.\_\\ \_\  \ \_,__/ /\____\ \____\
+    \/___/ \/____/ \/___/  \/____/     \/_/ \/_/\/__/\/_/ \/_/   \/___/  \/____/\/____/
 ==================
 
 The first photo of Earth from space was taken on October 24, 1946, from an altitude of 65 miles above the surface of New Mexico. It was captured by a 35-millimeter motion picture camera as that camera was propelled skyward on a German V-2 missile. 
