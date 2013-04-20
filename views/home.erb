@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CocoaLoa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        
+      body {
+        padding-top: 100px;
+        background: url(navy_blue.png);
+        font-family: 'Quicksand', sans-serif;
+      }
+      .btn {font-family: 'Quicksand', sans-serif;}
+
+      
+      .navbar .brand {
+        font-size: 40px;
+      }
+      
+      .rox {
+            
+        padding-top: 100px;
+            
+       }
+        
+        .box {
+        max-width: 100;
+        padding: 19px 29px 29px;
+        padding-top: 60px;
+        margin: 0 auto 20px;
+        overflow:hidden;
+        
+        background-color: #FEF9E1;
+        
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 40px rgba(0,0,0,.55);
+           -moz-box-shadow: 0 1px 40px rgba(0,0,0,.55);
+                box-shadow: 0 1px 40px rgba(0,0,0,.55);
+      }
+        
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Le Mentorr</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a onclick="proceed();" class="navbar-link">Logout</a>
+            </p>
+            <ul class="nav pull-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Messages</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+      
+
+
+       <div class="container-fluid">
+                
+                <div class="row-fluid">
+                    <div class="span8">
+                          <div class="hero-unit">
+                            <h2>Updates</h2>
+                            
+                          </div>
+                      </div>
+                      <div class="span4">
+                          <div class="well">
+                            <h2>Recent</h2>
+                          </div>
+                      </div>
+                      
+                      <div class="span4">
+                          <div class="well">
+                            <h2>New Message</h2>
+                            <form class="form-signin" action="/email" method="post">
+                                <input type="text" class="input-block-level" placeholder="To" name="to">
+                                
+                               <p> <textarea type="text" rows="5" class="input-block-level" placeholder="Message" name="message"></textarea> </p>
+                               <input class="btn btn-info btn-large" type="submit"  value="Send"/>
+                          </form>
+                          </div>
+                      </div>
+                 </div>   
+            </div>
+
+            
+
+     
+    <!-- Modal -->
+    <div id="email" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h1 id="myModalLabel">Send An Email</h1>
+      </div>
+      <div class="modal-body">
+      
+        <form class="form-signin" action="/email" method="post">
+            <input type="text" class="input-block-level" placeholder="To" name="to">
+            <div class="form-inline">
+                  <input type="text" class="input-small" placeholder="Time" name="time">
+                    <select name="type">
+                      <option>Seconds</option>
+                      <option>Minutes</option>
+                      <option>Hours</option>
+                      <option>Days</option>
+                      <option>Years</option>
+                    </select>
+            </div>
+            
+           <p> <textarea type="text" rows="10" class="input-block-level" placeholder="Message" name="message"></textarea> </p>
+           <input class="btn btn-info btn-large" type="submit"  value="Send"/>
+      </form>
+      
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="roar.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(function ()  
+            { $("#example").popover({html: true});  
+        }); 
+        
+        function proceed () {
+            var form = document.createElement('form');
+            form.setAttribute('method', 'post');
+            form.setAttribute('action', '/user/logout');
+            form.style.display = 'hidden';
+            document.body.appendChild(form)
+            form.submit();
+        }
+        
+        $(function(){
+          $('.container').masonry({
+            // options
+            itemSelector : '.item',
+            columnWidth : 240
+          });
+        });
+    </script>
+
+
+  </body>
+</html>
