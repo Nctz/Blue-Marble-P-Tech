@@ -59,33 +59,26 @@
   <body>
 
     <div class="container-narrow">
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <% @parsed.each do |shop| %>
+             <% while @x < 5  %> 
+                <% @x = @x + 1 %>
+                   <div class="item"><% @x %>ROARR</div>
+             <% end %>
+            <% end %>
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/login">Login</a></li>
-        </ul>
-        <h3 class="muted">Le Mentorr</h3>
-      </div>
-
-      <hr>
-
-      <div class="jumbotron">
-        <h1>This page is soon to change!</h1>
-        <p class="lead">This is a super crappy homepage, so...It will change later :P</p>
-         <p class="lead">Feel free to sign up, though :)</p>
-        <a class="btn btn-large btn-success" href="/signup">Sign up today</a>
-      </div>
-
-      <hr>
-
-
-
-
-      <div class="footer">
-        <p>&copy; Company 2013</p>
-      </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
 
     </div> <!-- /container -->
 
