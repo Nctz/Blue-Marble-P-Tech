@@ -3,26 +3,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CocoaLoa</title>
+    <title>The Blue Marble</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <style type="text/css">
         
       body {
         padding-top: 100px;
         background: url(navy_blue.png);
-        font-family: 'Quicksand', sans-serif;
-      }
-      .btn {font-family: 'Quicksand', sans-serif;}
-
-      
-      .navbar .brand {
-        font-size: 40px;
       }
       
       .rox {
@@ -77,7 +69,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/">Le Mentorr</a>
+          <a class="brand" href="/">CocoaLoa</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               <a onclick="proceed();" class="navbar-link">Logout</a>
@@ -98,25 +90,28 @@
                 <div class="row-fluid">
                     <div class="span8">
                           <div class="hero-unit">
-                            <h2>Updates</h2>
-                            
-                          </div>
-                      </div>
-                      <div class="span4">
-                          <div class="well">
-                            <h2>Recent</h2>
-                          </div>
-                      </div>
-                      
-                      <div class="span4">
-                          <div class="well">
                             <h2>New Message</h2>
                             <form class="form-signin" action="/email" method="post">
                                 <input type="text" class="input-block-level" placeholder="To" name="to">
+                                <div class="form-inline">
+                                      <input type="text" class="input-small" placeholder="Time" name="time">
+                                        <select name="type">
+                                          <option>Seconds</option>
+                                          <option>Minutes</option>
+                                          <option>Hours</option>
+                                          <option>Days</option>
+                                          <option>Years</option>
+                                        </select>
+                                </div>
                                 
                                <p> <textarea type="text" rows="5" class="input-block-level" placeholder="Message" name="message"></textarea> </p>
                                <input class="btn btn-info btn-large" type="submit"  value="Send"/>
                           </form>
+                          </div>
+                      </div>
+                      <div class="span4">
+                          <div class="well">
+                            <h2>New Message</h2>
                           </div>
                       </div>
                  </div>   

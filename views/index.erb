@@ -3,7 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>The Blue Marble</title>
+    <link rel="shortcut icon" type="image/x-icon" href="globe.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,18 +13,18 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        background: url(Earth-and-Sun.png);
       }
 
-      /* Custom container */
+      /* Custom container 
       .container-narrow {
         margin: 0 auto;
         max-width: 700px;
       }
       .container-narrow > hr {
         margin: 30px 0;
-      }
+      }  */
 
       /* Main marketing message and sign up button */
       .jumbotron {
@@ -31,10 +32,12 @@
         text-align: center;
       }
       .jumbotron h1 {
+        color:#A4A4A4;
         font-size: 72px;
         line-height: 1;
       }
       .jumbotron .btn {
+          color:white;
         font-size: 21px;
         padding: 14px 24px;
       }
@@ -58,29 +61,37 @@
 
   <body>
 
+      
+       
+      
     <div class="container-narrow">
-        <div id="myCarousel" class="carousel slide">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <% @parsed.each do |shop| %>
-             <% while @x < 5  %> 
-                <% @x = @x + 1 %>
-                   <div class="item"><% @x %>ROARR</div>
-             <% end %>
-            <% end %>
 
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <a class="brand" href="#">The Blue Marble</a>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="/pictures">Pictures</a></li>
+                  <form class="navbar-search pull-right">
+    <input type="text" class="search-query" placeholder="Search">
+    </form>
+            </ul>
           </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+        
+        
+
+
+     
+      <div class="jumbotron">
+        <h1>See A Side Of Earth You've Never Seen Before</h1>
+        <p class="lead">View a vast collection of photos of the Earth.</p>
+        <a class="btn btn-large btn-info" href="signup.html">Sign up today</a>
+        <a class="btn btn-large btn-info" href="login.html">Log in</a>
+      </div>
 
     </div> <!-- /container -->
+      
 
     <!-- Le javascript
     ================================================== -->

@@ -61,15 +61,28 @@ class TheApp < Sinatra::Base
             @user = User.first(:hashed_password => session[:user])
         redirect "/home"
         end
-        
-        file = open("./images.json")
-            json = file.read
-        
-            @parsed = JSON.parse(json)
-            @x = 0
+
         
         erb :index
         
+    end
+    
+    get "/pictures" do
+        
+        
+        @x = rand(1..9)
+        y = 0
+        json = File.open("./images.json") do |fi|
+          fi.read
+        end
+        
+       
+        
+        @parsed = JSON.parse(json)
+        
+        
+        
+        erb :pictures
     end
     
     
